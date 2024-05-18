@@ -29,9 +29,9 @@ if [ -d "$PREFIX/lib/jadx" ]; then
   echo "${red}Seems like JADX is already installed, skipping...${nocolor}"
 else
   cd $HOME
-  wget https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip
+  wget https://github.com/skylot/jadx/releases/download/v1.5.0/jadx-1.5.0.zip
   mkdir -p $PREFIX/lib/jadx
-  unzip jadx-1.4.7.zip -d $PREFIX/lib/jadx
+  unzip jadx-1.5.0.zip -d $PREFIX/lib/jadx
 fi
 echo "${yellow}JADX Successfully Installed!${nocolor}"
 
