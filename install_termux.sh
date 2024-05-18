@@ -33,7 +33,7 @@ else
   mkdir -p $PREFIX/lib/jadx
   unzip jadx-1.4.7.zip -d $PREFIX/lib/jadx
 fi
-echo "${yellow}ANDROID SDK TOOLS Successfully Installed!${nocolor}"
+echo "${yellow}JADX Successfully Installed!${nocolor}"
 
 echo "${green}━━━ Starting SDK Tools installation ━━━${nocolor}"
 if [ -d "android-sdk" ]; then
