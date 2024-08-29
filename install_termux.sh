@@ -83,28 +83,29 @@ fi
 
 echo "${yellow}Made with ⌨ by Abhi${nocolor}"
 
-if [ -f "~/.bashrc" ]; then
-  cat <<- EOL >> ~/.bashrc
-export ANDROID_HOME=$HOME/android-sdk
-export PATH=$PATH:$HOME/android-sdk/cmdline-tools/latest/bin
-export PATH=$PATH:$HOME/android-sdk/platform-tools
-export PATH=$PATH:$HOME/android-sdk/build-tools/34.0.4
-export PATH=$PATH:$PREFIX/lib/jadx/bin
+if [ -f "$HOME/.bashrc" ]; then
+  cat <<- EOL >> "$HOME/.bashrc"
+export ANDROID_HOME=\$HOME/android-sdk
+export PATH=\$PATH:\$HOME/android-sdk/cmdline-tools/latest/bin
+export PATH=\$PATH:\$HOME/android-sdk/platform-tools
+export PATH=\$PATH:\$HOME/android-sdk/build-tools/34.0.4
+export PATH=\$PATH:\$PREFIX/lib/jadx/bin
 EOL
-elif [ -f "~/.zshrc" ]; then
-  cat <<- EOL >> ~/.zshrc
-export ANDROID_HOME=$HOME/android-sdk
-export PATH=$PATH:$HOME/android-sdk/cmdline-tools/latest/bin
-export PATH=$PATH:$HOME/android-sdk/platform-tools
-export PATH=$PATH:$HOME/android-sdk/build-tools/34.0.4
-export PATH=$PATH:$PREFIX/lib/jadx/bin
+elif [ -f "$HOME/.zshrc" ]; then
+  cat <<- EOL >> "$HOME/.zshrc"
+export ANDROID_HOME=\$HOME/android-sdk
+export PATH=\$PATH:\$HOME/android-sdk/cmdline-tools/latest/bin
+export PATH=\$PATH:\$HOME/android-sdk/platform-tools
+export PATH=\$PATH:\$HOME/android-sdk/build-tools/34.0.4
+export PATH=\$PATH:\$PREFIX/lib/jadx/bin
 EOL
 else
-  cat <<- EOL >> $PREFIX/etc/bash.bashrc
-export ANDROID_HOME=$HOME/android-sdk
-export PATH=$PATH:$HOME/android-sdk/cmdline-tools/latest/bin
-export PATH=$PATH:$HOME/android-sdk/platform-tools
-export PATH=$PATH:$HOME/android-sdk/build-tools/34.0.4
-export PATH=$PATH:$PREFIX/lib/jadx/bin
+  cat <<- EOL >> "$PREFIX/etc/bash.bashrc"
+export ANDROID_HOME=\$HOME/android-sdk
+export PATH=\$PATH:\$HOME/android-sdk/cmdline-tools/latest/bin
+export PATH=\$PATH:\$HOME/android-sdk/platform-tools
+export PATH=\$PATH:\$HOME/android-sdk/build-tools/34.0.4
+export PATH=\$PATH:\$PREFIX/lib/jadx/bin
 EOL
 fi
+
